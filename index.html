@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="eu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PROEGA asteko ikasmaterialak. Ezagutu Akwaba Etxea eta egin jarduera interaktiboa.">
+  <meta name="theme-color" content="#f9f4e9">
+  <title>PROEGA astea</title>
+  <link rel="stylesheet" href="akwaba/style.css">
+  <style>
+    .collection-header { min-height: 68px; display: flex; align-items: center; }
+    .collection-title { margin: .22em 0 .25em; font: 700 clamp(3rem, 9.8vw, 7.6rem)/.9 var(--serif); letter-spacing: -.072em; }
+    .collection-title em { color: var(--red); font-weight: 400; }
+    .collection-resources { margin-top: 2rem; padding-top: clamp(1.45rem, 3vw, 2.8rem); border-top: 1px solid var(--line); }
+    .feature { display: grid; grid-template-columns: 1fr 1fr; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+    .feature img { height: 100%; min-height: 270px; aspect-ratio: 4 / 3; object-fit: cover; }
+    .feature-copy { align-self: center; padding: clamp(1.25rem, 4.5vw, 4rem); }
+    .feature-copy h2 { text-wrap: initial; }
+    .feature-copy .button { margin-top: 1.35rem; }
+    @media (max-width: 670px) {
+      .feature { grid-template-columns: minmax(0, 1fr); }
+      .feature img { min-height: 0; height: auto; aspect-ratio: 16 / 10; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#edukia">Jauzi edukira</a>
+  <header class="site-header">
+    <div class="wrap collection-header"><a class="wordmark" href="./">PROEGA<span> astea</span></a></div>
+  </header>
+  <main class="wrap section" id="edukia">
+    <h1 class="collection-title">PROEGA <em>astea</em></h1>
+    <p class="lead">Ikasgelan lantzeko baliabideak</p>
+    <div class="collection-resources">
+      <article class="feature">
+        <img src="akwaba/akwaba.webp" alt="" width="1200" height="900" fetchpriority="high">
+        <div class="feature-copy">
+          <p class="eyebrow">Abobo · Abidjan · Boli Kosta</p>
+          <h2>Akwaba Etxea</h2>
+          <p>Ezagutu Aboboko harrera-etxea eta Medericen historia. Ondoren, osatu babes-ibilbidea eta landu bi egoera praktiko.</p>
+          <a class="button primary" href="akwaba/">Ireki Akwaba Etxea <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
